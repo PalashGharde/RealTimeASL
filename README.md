@@ -1,7 +1,7 @@
 # **Implementation Steps for Real-Time American Sign Language Recognition System**
 The implementation of the Real-Time American Sign Language (ASL) Recognition System is structured into several key steps, each contributing to the efficient deployment of a deep learning-based model for ASL gesture classification.
 
-![ASL Translator](Images/Screenshot 2025-03-01 194434.png)
+![ASL Translator](Images/Screenshot%202025-03-01%20194434.png)
 
 ## **1. Data Acquisition and Preprocessing**
 The first step involves obtaining the Sign Language MNIST dataset, which consists of 87,000 images across 29 ASL classes. The dataset is structured as grayscale images of 28x28 pixels, capturing static hand gestures. During preprocessing, images are normalized by scaling pixel values between 0 and 1, ensuring stability in the training process. Additionally, the images are reshaped to maintain a consistent format and labels are converted into a binary representation using a LabelBinarizer.
@@ -9,7 +9,7 @@ The first step involves obtaining the Sign Language MNIST dataset, which consist
 ## **2. Data Augmentation**
 To improve model generalization and performance, data augmentation techniques are applied. This process artificially expands the dataset by introducing random rotations (±10°), zooming (±10%), and translations (±10%), ensuring robustness to variations in hand orientation, distance, and positioning. Augmentation is implemented using Keras’ ImageDataGenerator to generate more diverse training samples.
 
-![Dataset](Images/Screenshot 2025-03-01 192252.png)
+![Dataset](Images/Screenshot%202025-03-01%20192252.png)
 
 
 ## **3. Model Architecture Design**
