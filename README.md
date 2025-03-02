@@ -26,6 +26,7 @@ The CNN model is compiled using the Adam optimizer and categorical cross-entropy
 
 ## **5. Model Testing and Performance Evaluation**
 The trained model is evaluated on a separate test dataset to verify accuracy and generalization. The system achieves a 99% accuracy rate in ASL gesture classification. The confusion matrix highlights minor misclassifications across four specific classes, but overall, the model performs robustly across diverse real-world conditions.
+
 ![Model Testing](Images/Screenshot%202025-03-01%20191732.png)
 ![Model Testing loss](Images/Screenshot%202025-03-01%20191720.png)
 
