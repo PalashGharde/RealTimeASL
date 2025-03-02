@@ -1,4 +1,4 @@
-### **Implementation Steps for Real-Time American Sign Language Recognition System**
+# **Implementation Steps for Real-Time American Sign Language Recognition System**
 The implementation of the Real-Time American Sign Language (ASL) Recognition System is structured into several key steps, each contributing to the efficient deployment of a deep learning-based model for ASL gesture classification.
 
 ## **1. Data Acquisition and Preprocessing**
@@ -39,5 +39,5 @@ Gradient clipping to mitigate vanishing or exploding gradient issues.
 Transfer learning to adapt pre-trained models for improved accuracy.
 Expansion to dynamic ASL gestures by integrating LSTM or Transformer-based models for recognizing motion-dependent signs.
 
-### **Conclusion**
+# **Conclusion**
 This structured approach successfully implements a high-accuracy, real-time ASL recognition system using deep learning. Future advancements can further optimize recognition performance, scalability, and real-world usability.
