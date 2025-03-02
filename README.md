@@ -19,16 +19,19 @@ Three convolutional layers with filters of sizes 75, 50, and 25 respectively.
 Each convolutional layer is followed by Batch Normalization to stabilize training and Max Pooling (2x2) to reduce spatial dimensions.
 Dropout layers (20% and 30%) are introduced to prevent overfitting.
 The final Dense layers include a 512-unit hidden layer and a softmax output layer for classification into 24 static ASL letters (excluding "J" and "Z," which require motion).
-
+![Model Architecture](Images/Screenshot%202025-03-01%20200428.png)
 
 ## **4. Model Training**
 The CNN model is compiled using the Adam optimizer and categorical cross-entropy loss function. A training-validation split is created from the dataset, with 20% of samples reserved for validation. Training is conducted over 20 epochs with an initial learning rate of 0.001. If validation loss fails to improve, learning rate adjustments are made to optimize convergence.
 
 ## **5. Model Testing and Performance Evaluation**
 The trained model is evaluated on a separate test dataset to verify accuracy and generalization. The system achieves a 99% accuracy rate in ASL gesture classification. The confusion matrix highlights minor misclassifications across four specific classes, but overall, the model performs robustly across diverse real-world conditions.
+![Model Testing](Images/Screenshot%202025-03-01%20191732.png)
+![Model Testing loss](Images/Screenshot%202025-03-01%20191720.png)
 
 ## **6. Real-Time Inference System**
 To enable real-time ASL recognition, the model is integrated with a webcam-based video feed. The implementation follows these steps:
+![Real-Time Inference System](Images/Screenshot%202025-03-01%20192049.png)
 
 Continuous video capture is performed using a webcam.
 A Region of Interest (ROI) isolates the hand gestures in the video frame.
